@@ -27,3 +27,30 @@ Mouse Events in JQuery :
             $("#box").css("background-color","purple") 
         })
     })
+
+
+
+
+Keyboard Events :
+
+<script>
+    $(document).ready(function(){
+        $("body").keypress(function(){
+            $("body").css("background-color","green") 
+        })
+    })
+
+    $(document).ready(function(){
+        $("body").keydown(function(){
+            $("body").css("background-color","tan") 
+        })
+    })
+
+    $(document).ready(function(){
+        $("body").keyup(function(){
+            $("body").css("background-color","orange") 
+        })
+    })
+
+
+</script>
