@@ -96,3 +96,23 @@ $(document).ready(function(){
         $('#box').css('background-color','yellow')
     })
 })
+
+
+
+
+JQuery Get Methods
+
+$(document).ready(function(){
+    $('#sform').submit(function(){
+        var sname     = $('#sname').val();
+        var sclass    = $('#sclass').val();
+        var scountry  = $('#scountry').val();
+
+        console.log(sname);
+        console.log(sclass);
+        console.log(scountry);
+    })
+
+})
+
+text() html() attr() val()
