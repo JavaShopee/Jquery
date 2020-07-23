@@ -131,3 +131,39 @@ $(document).ready(function(){
             $("#box").toggleClass('second')
         });
     });
+
+
+
+
+CSS Method in Jquery 
+
+   $(document).ready(function(){
+        $("#stylebutton").click(function(){
+            $("#box").css({'background-color':'red','border':'3px dotted black'})   
+        });    
+    });
+    
+    
+    
+    
+ ON AND OFF METHODS   
+ $(document).ready(function(){
+       $('#box').on({
+         "click":function(){
+            $(this).css('background','red')
+         },
+         "mouseover":function(){
+            $(this).css('background','orange')
+        },   
+        "mouseout":function(){
+            $(this).css('background','yellow')
+        }
+
+        })
+
+        $('#stylebutton').click(function(){
+            $('#box').off("mouseover mouseout");
+        })
+
+
+    });   
