@@ -116,3 +116,18 @@ $(document).ready(function(){
 })
 
 text() html() attr() val()
+
+
+
+
+$(document).ready(function(){
+        $("#addbutton").click(function(){
+            $("#box").addClass('first second')
+        });
+        $("#removebutton").click(function(){
+            $("#box").removeClass('second')
+        });
+        $("#togglebutton").click(function(){
+            $("#box").toggleClass('second')
+        });
+    });
