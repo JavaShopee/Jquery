@@ -167,3 +167,41 @@ CSS Method in Jquery
 
 
     });   
+
+
+
+
+Append and Prepend Method:
+
+<body>
+<h1>JQuery Class Methods</h1>
+
+<div id="box">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Hic quo dignissimos iusto debitis obcaecati, reiciendis doloremque pariatur odit placeat. Harum at tempore velit nulla nobis eaque, recusandae quas quae itaque.</p>
+</div>
+<br>
+<ol>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <li>List Item 5</li>
+</ol>
+<button id="appendbtn">Append</button>
+<button id="prependbtn">Prepend</button>
+
+<script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+      $('#appendbtn').click(function(){
+          $('ol').append('<li>Apppend New Item</li>')
+      })
+      $('#prependbtn').click(function(){
+        $('ol').prepend('<li>Prepend New Item</li>')
+    })      
+    
+   });
+</script>
+
+</body>
