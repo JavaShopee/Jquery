@@ -415,3 +415,6 @@ position and offset method()
    });
 </script>
 </body>
+
+
+If we use position as relative in CSS, position metod will work wrt it's parent whereas offset will alwys work wrt document
