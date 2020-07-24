@@ -211,6 +211,7 @@ Append and Prepend Method:
 
 
 
+
 appendTo() and prependTo()
 
 <h1>JQuery Class Methods</h1>
@@ -228,6 +229,42 @@ appendTo() and prependTo()
    $(document).ready(function(){
        $('#appendbtn').click(function(){
             $('<h3>Append Me</h3>').appendTo('#box')
+       });
+    });
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+clone() method 
+
+
+<body>
+<h1>JQuery Class Methods</h1>
+<div id="box1">
+    <h2>Test Box 1</h2>
+    <p>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Hic quo dignissimos iusto debitis obcaecati, reiciendis doloremque pariatur odit placeat. Harum at tempore velit nulla nobis eaque, recusandae quas quae itaque.</p>
+</div>
+
+<div id="box2">
+    <h2>Test Box 2</h2>
+    <p>This is another div</p>
+</div>
+<br>
+
+<button id="stylebtn">Clone</button>
+
+<script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+       $('#stylebtn').click(function(){
+           $('#box1 h2').clone().prependTo('#box2')        
        });
     });
 </script>
