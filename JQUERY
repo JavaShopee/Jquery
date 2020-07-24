@@ -324,3 +324,29 @@ Wrap Function
     });
 </script>
 </body>
+
+
+
+
+wrapAll() and wrapInner() method :
+
+<body>
+<h1>JQuery Class Methods</h1>
+    <p>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Hic quo dignissimos iusto debitis obcaecati, reiciendis doloremque pariatur odit placeat. Harum at tempore velit nulla nobis eaque, recusandae quas quae itaque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi omnis molestias quam labore adipisci voluptatem sunt. Tempora qui magnam, ab quisquam facere officia molestiae perferendis recusandae, repellat praesentium aliquid quibusdam!</p>
+<br><br>
+<button id="stylebtn1">WrapAll</button>
+<button id="stylebtn2">WrapInner</button>
+
+<script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+        $('#stylebtn1').click(function(){
+            $('p').wrapAll('<div id="test2"></div>')
+        })  
+        $('#stylebtn2').click(function(){
+            $('p span').wrapInner('<h3></h3>')
+        })  
+   });
+</script>
+</body>
