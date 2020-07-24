@@ -299,3 +299,28 @@ ReplaceAll()   : Fist Tag and then Selector
 </script>
 
 </body>
+
+
+
+
+Wrap Function
+
+
+<body>
+<h1>JQuery Class Methods</h1>
+<div id="box1">
+    <h2>Test Box 1</h2>
+    <p>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Hic quo dignissimos iusto debitis obcaecati, reiciendis doloremque pariatur odit placeat. Harum at tempore velit nulla nobis eaque, recusandae quas quae itaque.</p>
+</div>
+
+<button id="stylebtn">Wrap</button>
+
+<script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+       $('#stylebtn').click(function(){
+            $('#box1 p').wrap('<div id="test"></div>');                               
+       });
+    });
+</script>
+</body>
