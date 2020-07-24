@@ -205,3 +205,31 @@ Append and Prepend Method:
 </script>
 
 </body>
+
+
+
+
+
+
+appendTo() and prependTo()
+
+<h1>JQuery Class Methods</h1>
+<div id="box">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Hic quo dignissimos iusto debitis obcaecati, reiciendis doloremque pariatur odit placeat. Harum at tempore velit nulla nobis eaque, recusandae quas quae itaque.</p>
+</div>
+<br>
+
+<button id="appendbtn">AppendTo</button>
+<button id="prependbtn">PrependTo</button>
+
+<script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+       $('#appendbtn').click(function(){
+            $('<h3>Append Me</h3>').appendTo('#box')
+       });
+    });
+</script>
+
+</body>
