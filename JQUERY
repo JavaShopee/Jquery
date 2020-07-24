@@ -270,3 +270,32 @@ clone() method
 </script>
 
 </body>
+
+
+
+
+ReplaceWith()  : First Selectro and then Tag  
+ReplaceAll()   : Fist Tag and then Selector
+
+<body>
+<h1>JQuery Class Methods</h1>
+<div id="box1">
+    <h2>Test Box 1</h2>
+    <p>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Hic quo dignissimos iusto debitis obcaecati, reiciendis doloremque pariatur odit placeat. Harum at tempore velit nulla nobis eaque, recusandae quas quae itaque.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem debitis nemo quam tenetur, rerum minima. Adipisci alias magni delectus autem quas soluta perferendis saepe dignissimos et quia? Adipisci, non provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto tenetur hic non neque, et consequatur earum architecto autem repellendus quos eius aut inventore omnis officiis reprehenderit mollitia deleniti beatae?</p>
+
+</div>
+
+<button id="stylebtn">ReplaceWith</button>
+
+<script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+       $('#stylebtn').click(function(){
+            $('<p>Yahoo Baba</p>').replaceAll('p')       
+       });
+    });
+</script>
+
+</body>
