@@ -350,3 +350,38 @@ wrapAll() and wrapInner() method :
    });
 </script>
 </body>
+
+
+
+
+width() and height() methods :
+
+<h1>JQuery Width and Heigth Methods</h1>
+<div id="box1">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quaerat qui veritatis ut similique mollitia est, id assumenda perspiciatis autem accusantium aperiam commodi officiis et repudiandae eveniet error culpa ea?</p>
+</div>
+<br>
+<button id="widthbtn">Width</button>
+<button id="heigthbtn">Height</button>
+    
+<script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+        $('#widthbtn').click(function(){
+            $('#box1').width('400px') 
+            var width = $('#box1').width()
+            var innerWidth = $('#box1').innerWidth()
+            var outerWidth = $('#box1').outerWidth()
+            var outerWidth_bool = $('#box1').outerWidth(true)
+
+
+            console.log(width)
+            console.log(innerWidth)
+            console.log(outerWidth)
+            console.log(outerWidth_bool)
+
+        });
+   });
+</script>
+</body>
