@@ -501,3 +501,34 @@ slideUp() slideDown() slideToggle()
     })
 </script>
 </body>
+
+
+
+
+JQuery animate() method 
+
+<body style="width:600px">
+    <h1>JQuery hasClass Method</h1>
+    <br><br>
+    <div id="box1" class=""> 
+    <h2>Test Box</h2>
+    <p id="pid1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, libero illo accusamus fugit unde, harum ratione aspernatur quaerat ad quibusdam quae iure aliquam dolore eum. Repellat at perspiciatis accusamus nemo!</p>
+    </div>
+    <br><br>
+    <button id="stylbtn">Animate</button>
+    <script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+       $('#stylbtn').click(function(){
+            $('#box1').animate({
+                left:"20px",
+                width:"700px",
+                fontSize:"20px"
+            })
+            $('#box1').animate({
+                height:"700px",
+            })
+       })
+    })
+</script>
+</body>
