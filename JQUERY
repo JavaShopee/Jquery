@@ -468,3 +468,36 @@ fadeIn() fadeOut() fadeToggle() fadeTo()
     });
 </script>
 </body>
+
+
+
+
+slideUp() slideDown() slideToggle()
+<body style="width:600px">
+    <h1>JQuery hasClass Method</h1>
+    <br><br>
+    <div id="box1" class=""> 
+    <h2>Test Box</h2>
+    <p id="pid1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, libero illo accusamus fugit unde, harum ratione aspernatur quaerat ad quibusdam quae iure aliquam dolore eum. Repellat at perspiciatis accusamus nemo!</p>
+    </div>
+    <br><br>
+    <button id="stylbtn1">SlideUp</button>
+    <button id="stylbtn2">SlideDown</button>
+    <button id="stylbtn3">SlideToggle</button>
+    <script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+        $('#stylbtn1').click(function(){
+            $('#box1').slideUp()
+        })
+
+        $('#stylbtn2').click(function(){
+            $('#box1').slideDown()
+        })
+
+        $('#stylbtn3').click(function(){
+            $('#box1').slideToggle()
+        })
+    })
+</script>
+</body>
