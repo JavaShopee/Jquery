@@ -418,3 +418,53 @@ position and offset method()
 
 
 If we use position as relative in CSS, position metod will work wrt it's parent whereas offset will alwys work wrt document
+
+
+
+
+
+
+
+fadeIn() fadeOut() fadeToggle() fadeTo()
+
+
+<body style="width:600px">
+    <h1>JQuery hasClass Method</h1>
+    <br><br>
+    <div id="box1" class=""> 
+    <h2>Test Box</h2>
+    <p id="pid1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, libero illo accusamus fugit unde, harum ratione aspernatur quaerat ad quibusdam quae iure aliquam dolore eum. Repellat at perspiciatis accusamus nemo!</p>
+    </div>
+    <br><br>
+    <button id="stylbtn1">fadeOut</button>
+    <button id="stylbtn2">fadeIn</button>
+    <button id="stylbtn3">fadeToggle</button>
+    <button id="stylbtn4">fadeTo</button>
+    <script src="jquery.js"></script>
+<script>
+   $(document).ready(function(){
+        $('#stylbtn1').click(function(){
+            $('#pid1').fadeOut(10000)
+            
+        })
+
+        $('#stylbtn2').click(function(){
+            $('#pid1').fadeIn(10000)
+            
+        })
+
+        $('#stylbtn3').click(function(){
+            $('#pid1').fadeToggle(10000)
+            
+        })
+
+
+        $('#stylbtn3').click(function(){
+            $('#pid1').fadeTo(10000)
+            
+        })
+
+        
+    });
+</script>
+</body>
